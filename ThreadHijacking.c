@@ -1,6 +1,10 @@
 #include <Windows.h>
 #include <stdio.h>
- 
+
+//This code decrypts a payload encrypted with a single byte key, it then creates a new thread in a suspended state and feeds it a benign function.
+//Then, it injects the payload address and resumes the thread, making it run the decrypted payload instead.
+
+
 CONTEXT ctx = { .ContextFlags = CONTEXT_CONTROL };
  
 DWORD WINAPI MyFunc() {
