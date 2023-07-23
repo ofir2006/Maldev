@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <tlhelp32.h>
 
-//This code opens a new process with a spoofed parent ID
+//This code opens a new process with a spoofed parent process name
 //Usage: spoofer.exe <Full path to file> <name of parent process>
 
 
